@@ -5,13 +5,13 @@ This is a simple tool to change the colour of an image. It is written in Python 
 ## Usage
 
 1. Install the Pillow library: `pip install Pillow`
-2. Run the script: `python change-colour.py`, with the following arguments:
+2. Run the script: `python main.py`, with the following arguments:
     - `--in_root`: The root directory of the input images;
     - `--out_root`: The root directory of the output images;
     - `--in_fn`: Optional name of image within the input root directory; if not specified, all images in the input root directory will be processed;
     - `--img_format`: input format of the image (default: `png`);
     - `--src_col`: the source colour to be changed;
-    - `--tgt_col`: the target colour to be changed to.
+    - `--dst_col`: the target (destination) colour to be changed to.
     - `--thres`: the threshold distance for considering a pixel to be of the source colour (default: 100).
     - `--sigma`: the standard deviation of the Gaussian kernel for blurring the image (default: 10).
     - `--smooth_iter`: the number of iterations for smoothing the image by blending each pixel with its neighbours (default: 3).
